@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.greatdevstudios.nexora",
+      "sha256_cert_fingerprints": [
+        "C1:CF:84:98:AE:0C:82:F0:35:82:71:80:7B:09:48:02:4D:4B:60:8C:75:4D:7B:60:AC:9D:58:45:C1:70:75:44",
+        "7B:3A:7D:02:E7:98:F5:39:E3:EB:24:58:37:26:3C:86:5E:32:E8:AF:D2:7F:9A:FD:80:BA:B8:00:2D:34:6D:87"
+      ]
+    }
+  }
+]
