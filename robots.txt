@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greate43.github.io/SubscriptionSaver/sitemap.xml
+Sitemap: https://greate43.github.io/Docora/sitemap.xml
