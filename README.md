@@ -8,9 +8,11 @@ Root of the GitHub Pages domain, and the origin of **greatdevstudios.com**.
   serve the `.well-known` folder.
 - `index.html` + `hub.css` — the Greatdev Studios hub. On github.io it forwards visitors to
   https://greatdevstudios.com/ (canonical); the Cloudflare Worker `greatdev-site` serves it there.
-- `sitemap.xml` (index), `sitemap-studio.xml`, `robots.txt` — for greatdevstudios.com. App sitemaps are served
-  by the Worker at `/sitemap-fitness.xml`, `/sitemap-docora.xml`, `/sitemap-subtrack.xml`.
+- `sitemap-studio.xml` — the hub's own URLs. The Worker generates `robots.txt` and `sitemap.xml` for the apex
+  (an index of every app subdomain's sitemap) and for each subdomain.
 
-The Worker maps clean paths to the GitHub Pages sites: `/steelrank/` → `/fitness/drill/`, `/docora/` →
-`/Docora/`, `/subtrack/` → `/SubscriptionSaver/`, `/nexora/` → `/Nexora/`, `/safespend/` → `/SafeSpend/`, and
-the other fitness apps by store name. Files the apps download from github.io are untouched.
+Each app lives on its own subdomain, served by the Worker from the GitHub Pages sites:
+steelrank. → `/fitness/drill/`, docora. → `/Docora/`, subtrack. → `/SubscriptionSaver/`, nexora. → `/Nexora/`
+(plus `/.well-known/assetlinks.json`), safespend. → `/SafeSpend/`, and the other fitness apps by store name.
+Old addresses (github.io paths, greatdevstudios.com/<app>/) 301 to the subdomain. Files the apps download from
+github.io are untouched.
