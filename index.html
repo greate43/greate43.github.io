@@ -12,11 +12,15 @@
 <meta property="og:title" content="Greatdev Studios · Small apps, serious craft">
 <meta property="og:description" content="Home calisthenics, document scanning, subscriptions, budgeting and your media library. Small apps that do one job well.">
 <meta property="og:url" content="https://greatdevstudios.com/">
-<meta property="og:image" content="https://greatdevstudios.com/assets/drill/share.png">
+<meta property="og:image" content="https://greatdevstudios.com/img/og-studio.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Illustration of phones glowing in different colours on a lamp-lit workbench">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0f17">
 <link rel="icon" type="image/png" sizes="32x32" href="https://greatdevstudios.com/assets/drill/favicon-32.png">
 <link rel="stylesheet" href="hub.css">
+<link rel="preload" as="image" type="image/webp" imagesrcset="img/hero-studio-640.webp 640w, img/hero-studio-1100.webp 1100w, img/hero-studio-1672.webp 1672w" imagesizes="100vw" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://greatdevstudios.com/#org","name":"Greatdev Studios","url":"https://greatdevstudios.com/","logo":"https://greatdevstudios.com/assets/drill/apple-touch-icon.png","email":"greate43.sk.dev@gmail.com","sameAs":["https://apps.apple.com/app/id6831783425","https://play.google.com/store/apps/details?id=com.greate43.sk.dev.drill","https://play.google.com/store/apps/details?id=com.greate43.sk.dev.docora","https://play.google.com/store/apps/details?id=com.greate43.sk.dev.subtrack","https://play.google.com/store/apps/details?id=com.greatdevstudios.nexora","https://play.google.com/store/apps/details?id=com.greate43.dev.safespend"]},{"@type":"WebSite","name":"Greatdev Studios","url":"https://greatdevstudios.com/","publisher":{"@id":"https://greatdevstudios.com/#org"}},{"@type":"ItemList","name":"Apps by Greatdev Studios","itemListElement":[{"@type":"ListItem","position":1,"url":"https://steelrank.greatdevstudios.com/","name":"Steelrank"},{"@type":"ListItem","position":2,"url":"https://docora.greatdevstudios.com/","name":"Docora"},{"@type":"ListItem","position":3,"url":"https://subtrack.greatdevstudios.com/","name":"SubTrack"},{"@type":"ListItem","position":4,"url":"https://safespend.greatdevstudios.com/","name":"SafeSpend"},{"@type":"ListItem","position":5,"url":"https://nexora.greatdevstudios.com/","name":"Nexora"}]}]}</script>
 </head>
 <body>
@@ -27,7 +31,7 @@
 </header>
 <main>
   <section class="hero">
-    <div class="glow" aria-hidden="true"></div>
+    <div class="hero-bg"><img src="img/hero-studio-1100.webp" srcset="img/hero-studio-640.webp 640w, img/hero-studio-1100.webp 1100w, img/hero-studio-1672.webp 1672w" sizes="100vw" alt="Illustration of phones glowing in different colours on a lamp-lit workbench" width="1672" height="941" fetchpriority="high" decoding="async"></div><div class="hero-copy">
     <p class="kicker">Independent app studio</p>
     <h1>Small apps.<br><em>Serious</em> craft.</h1>
     <p class="sub">Apps that each do one job well: train at home, scan a document, track what you pay for, plan to payday and bring your media into one place.</p>
@@ -38,6 +42,7 @@
       <li><strong>139</strong><span>exercise form guides</span></li>
       <li><strong>44</strong><span>languages in Steelrank</span></li>
     </ul>
+    </div>
   </section>
 
   <section id="apps" class="apps" aria-labelledby="apps-h">
@@ -55,10 +60,10 @@
     </article>
 
     <div id="everyday" class="grid">
-      <a class="card" href="https://docora.greatdevstudios.com/"><img src="https://docora.greatdevstudios.com/assets/icon-192.png" alt="" width="56" height="56"><span class="tag">Android · Documents</span><h3>Docora</h3><p>Scan documents to PDF, then sign, merge, compress and organise them. No account, no ads, works offline.</p><strong>Explore Docora →</strong></a>
-      <a class="card" href="https://subtrack.greatdevstudios.com/"><img src="https://subtrack.greatdevstudios.com/assets/subtrack-logo.png" alt="" width="56" height="56"><span class="tag">Android · Money</span><h3>SubTrack</h3><p>Track subscriptions and recurring bills, see upcoming renewals and understand what you really pay each month and year.</p><strong>Explore SubTrack →</strong></a>
-      <a class="card" href="https://safespend.greatdevstudios.com/"><span class="mono" aria-hidden="true">S</span><span class="tag">Android · Money</span><h3>SafeSpend</h3><p>Budget and payday planning, so you know where your money stands before the next pay arrives.</p><strong>Explore SafeSpend →</strong></a>
-      <a id="media" class="card" href="https://nexora.greatdevstudios.com/"><img src="https://nexora.greatdevstudios.com/assets/nexora-mark.png" alt="" width="56" height="56"><span class="tag">Android &amp; Android TV · Media</span><h3>Nexora</h3><p>Movies, series and live TV from your own playlists, media server and add-ons, together in one app on phone, tablet and TV.</p><strong>Explore Nexora →</strong></a>
+      <a class="card" href="https://docora.greatdevstudios.com/"><img class="art" src="img/card-docora.webp" alt="Illustration of hands scanning paper documents with a phone" width="640" height="571" loading="lazy" decoding="async"><img src="https://docora.greatdevstudios.com/assets/icon-192.png" alt="" width="56" height="56"><span class="tag">Android · Documents</span><h3>Docora</h3><p>Scan documents to PDF, then sign, merge, compress and organise them. No account, no ads, works offline.</p><strong>Explore Docora →</strong></a>
+      <a class="card" href="https://subtrack.greatdevstudios.com/"><img class="art" src="img/card-subtrack.webp" alt="Illustration of a person sorting subscription reminders on a phone" width="640" height="571" loading="lazy" decoding="async"><img src="https://subtrack.greatdevstudios.com/assets/subtrack-logo.png" alt="" width="56" height="56"><span class="tag">Android · Money</span><h3>SubTrack</h3><p>Track subscriptions and recurring bills, see upcoming renewals and understand what you really pay each month and year.</p><strong>Explore SubTrack →</strong></a>
+      <a class="card" href="https://safespend.greatdevstudios.com/"><img class="art" src="img/card-safespend.webp" alt="Illustration of a person dividing coins into savings jars" width="640" height="571" loading="lazy" decoding="async"><span class="mono" aria-hidden="true">S</span><span class="tag">Android · Money</span><h3>SafeSpend</h3><p>Budget and payday planning, so you know where your money stands before the next pay arrives.</p><strong>Explore SafeSpend →</strong></a>
+      <a id="media" class="card" href="https://nexora.greatdevstudios.com/"><img class="art" src="img/card-nexora.webp" alt="Illustration of a living room lit by a television at night" width="640" height="571" loading="lazy" decoding="async"><img src="https://nexora.greatdevstudios.com/assets/nexora-mark.png" alt="" width="56" height="56"><span class="tag">Android &amp; Android TV · Media</span><h3>Nexora</h3><p>Movies, series and live TV from your own playlists, media server and add-ons, together in one app on phone, tablet and TV.</p><strong>Explore Nexora →</strong></a>
     </div>
 
     <section class="soon" aria-labelledby="soon-h">
